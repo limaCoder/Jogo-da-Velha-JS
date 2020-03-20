@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jogo da Velha</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id="players">
+    <span id="warning">Vez do jogador 1</span>
+  </div>
+  <div id="game"></div>
+  <div id="controls">
+    <a href="#" onclick="tic_tac_toe.restart()" class="btn">Jogar novamente</a>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+    tic_tac_toe.init(document.getElementById('game'));
+    tic_tac_toe.draw();
+  </script>
+</body>
+
+</html>
